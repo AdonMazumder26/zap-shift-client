@@ -5,10 +5,14 @@ import Footer from '../pages/shared/Footer/Footer';
 
 const RootLayout = () => {
     return (
-        <div>
-            <Navbar></Navbar>
+        <div className='max-w-full bg-[#EAECED]'>
+            <div className='max-w-[94%] mx-auto pt-8'>
+                <Navbar></Navbar>
+            </div>
             <Outlet></Outlet>
-            <Footer></Footer>
+            <div className='max-w-[94%] mx-auto'>
+                <Footer></Footer>
+            </div>
         </div>
     );
 };

@@ -6,22 +6,22 @@ import serviceLogo from '../../../assets/service.png'
 
 const Services = () => {
     return (
-        <section className="p-25 bg-[#03373D] rounded-3xl">
+        <section className="p-20 bg-[#03373D] rounded-3xl">
             {/* Main container with max-width and responsive padding */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-4 py-4 sm:px-6 lg:px-8">
 
                 {/* Section Header */}
                 <div className="text-center mb-12 ">
                     <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
                         Our Services
                     </h2>
-                    <p className="mt-4 text-lg text-white font-urbanist font-medium">
+                    <p className="mt-4 text-base text-white font-urbanist font-medium max-w-3xl mx-auto">
                         Enjoy fast, reliable parcel delivery with real-time tracking and zero hassle. From personal packages to business shipments — we deliver on time, every time.
                     </p>
                 </div>
 
                 {/* Responsive Grid for Cards */}
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
                     {/* Loop through the servicesData and create a card for each item */}
                     {servicesData.map((service) => (
                         <div
